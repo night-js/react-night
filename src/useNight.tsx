@@ -14,7 +14,7 @@ type Output = {
 };
 
 export const useNight = (): Output => {
-  const { night } = useContext(NightContext);
+  const night = useContext(NightContext);
 
   const toggle = () => night.toggle();
   const light = () => night.light();

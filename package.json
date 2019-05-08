@@ -1,7 +1,7 @@
 {
   "name": "react-night",
   "version": "0.0.1",
-  "description": "night.js implementation for React component",
+  "description": "night.js implementation for React",
   "author": "Jakub Biesiada",
   "license": "MIT",
   "main": "./lib/react-night.min.js",
@@ -34,7 +34,7 @@
     "night.js": "^1.2.0"
   },
   "devDependencies": {
-    "@types/react": "^16.8.16",
+    "@types/react": "^16.8.17",
     "@typescript-eslint/parser": "^1.7.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",

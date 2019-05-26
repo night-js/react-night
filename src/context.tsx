@@ -9,6 +9,7 @@ type Settings = {
   brightness: boolean;
   brightnessHighClass: string;
   brightnessLowClass: string;
+  permissionDelay: number;
   storage: boolean;
   storageClear: boolean;
   soundUrl?: string;

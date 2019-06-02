@@ -4,3 +4,4 @@
 #### New Feature
 - `NightProvider` context API
 - `useNight` hook
+- `withNight` HOC

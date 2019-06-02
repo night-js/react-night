@@ -1,16 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import { NightContext } from './context';
 
-export const withNight = (Component: React.ComponentClass) => {
-  const { ...nightProps } = useContext(NightContext);
-
-  return (props: React.ComponentProps<any>) => {
-    const concatedProps = {
-      ...props,
-      ...nightProps
-    };
-
-    return <Component {...concatedProps} />;
-  };
-};
+export const withNight = (WrappedComponent: React.ComponentClass) => (
+  props: React.ComponentProps<any>
+) => (
+  <NightContext.Consumer>
+    {({ ...nightProps }) => <WrappedComponent {...props} {...nightProps} />}
+  </NightContext.Consumer>
+);

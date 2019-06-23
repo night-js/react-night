@@ -37,6 +37,7 @@ ReactDOM.render(
 
 **• Then use `withNight` HOC:**
 ```js
+import React from 'react';
 import { withNight } from 'react-night';
 
 const App = props => {
@@ -50,6 +51,7 @@ export default withNight(App);
 
 **• Or `useNight` Hook:**
 ```js
+import React from 'react';
 import { useNight } from 'react-night';
 
 const App = () => {

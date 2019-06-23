@@ -11,6 +11,7 @@ type Output = {
   setTimes: (sunrise: number, sunset: number) => void;
   reset: () => void;
   destroy: () => void;
+  night: object;
 };
 
 export const useNight = (): Output => {
@@ -40,6 +41,7 @@ export const useNight = (): Output => {
     setCoords,
     setTimes,
     reset,
-    destroy
+    destroy,
+    ...night
   };
 };

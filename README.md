@@ -7,7 +7,7 @@
 ## Demo
 **[See plugin in action](https://jb1905.github.io/night.js/)**
 
-## How to Use
+## How to Install
 First, install the library in your project by npm:
 ```sh
 $ npm install react-night
@@ -16,6 +16,51 @@ $ npm install react-night
 Or Yarn:
 ```sh
 $ yarn add react-night
+```
+
+## Getting Started
+**• Import `NightProvider` from library in your React app and wrap main component:**
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { NightProvider } from 'react-night';
+
+import App from './App';
+
+ReactDOM.render(
+  <NightProvider config={{ /* night.js settings */ }}>
+    <App />
+  </NightProvider>,
+  document.getElementById('root')
+);
+```
+
+**• Then use `withNight` HOC:**
+```js
+import { withNight } from 'react-night';
+
+const App = props => {
+  return (
+    <h1>Hello Night!</h1>
+  );
+};
+
+export default withNight(App);
+```
+
+**• Or `useNight` Hook:**
+```js
+import { useNight } from 'react-night';
+
+const App = () => {
+  const { /* night.js params */ } = useNight();
+  
+  return (
+    <h1>Hello Night!</h1>
+  );
+};
+
+export default App;
 ```
 
 ## License

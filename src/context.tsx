@@ -2,33 +2,33 @@ import React from 'react';
 import Night from 'night.js';
 
 type Settings = {
-  mode: 'smart' | 'color-scheme';
   auto: boolean;
-  darkClass?: string;
-  lightClass?: string;
   brightness: boolean;
   brightnessHighClass: string;
   brightnessLowClass: string;
+  darkClass?: string;
+  lightClass?: string;
+  mode: 'smart' | 'color-scheme';
   permissionDelay: number;
+  soundTimeout: number;
+  soundUrl?: string;
   storage: boolean;
   storageClear: boolean;
-  soundUrl?: string;
-  soundTimeout: number;
 };
 
 type Callbacks = {
-  onToggle: () => void;
-  onSmartSwitch: () => void;
-  onLight: () => void;
-  onDark: () => void;
-  onInit: () => void;
-  onStorageClear: () => void;
-  onBrightness: () => void;
-  onBrightnessNotSupported: () => void;
   onAccess: () => void;
   onAccessDenied: () => void;
+  onBrightness: () => void;
+  onBrightnessNotSupported: () => void;
+  onDark: () => void;
+  onInit: () => void;
+  onToggle: () => void;
+  onLight: () => void;
+  onSmartSwitch: () => void;
   onSoundPlay: () => void;
   onSoundPause: () => void;
+  onStorageClear: () => void;
 };
 
 type Config = {

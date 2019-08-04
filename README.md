@@ -4,6 +4,7 @@
 [![NPM downloads](http://img.shields.io/npm/dm/react-night.svg?style=flat-square)](https://www.npmjs.com/package/react-night)
 
 #### [night.js](https://www.npmjs.com/package/night.js) implementation for React
+
 ## Demo
 **[See plugin in action](https://jb1905.github.io/night.js/)**
 

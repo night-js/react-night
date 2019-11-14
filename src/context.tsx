@@ -6,6 +6,7 @@ type Settings = {
   brightness: boolean;
   brightnessHighClass: string;
   brightnessLowClass: string;
+  checkBreakpoint: boolean;
   darkClass?: string;
   lightClass?: string;
   mode: 'smart' | 'color-scheme';

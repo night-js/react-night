@@ -22,6 +22,8 @@ $ yarn add react-night
 ## Getting Started
 **• Import `NightProvider` from library in your React app and wrap main component:**
 ```js
+// index.js
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { NightProvider } from 'react-night';
@@ -36,22 +38,10 @@ ReactDOM.render(
 );
 ```
 
-**• Then use `withNight` HOC:**
+**• Then use `useNight` Hook:**
 ```js
-import React from 'react';
-import { withNight } from 'react-night';
+// App.js
 
-const App = props => {
-  return (
-    <h1>Hello Night!</h1>
-  );
-};
-
-export default withNight(App);
-```
-
-**• Or `useNight` Hook:**
-```js
 import React from 'react';
 import { useNight } from 'react-night';
 
@@ -64,6 +54,22 @@ const App = () => {
 };
 
 export default App;
+```
+
+**• Or `withNight` HOC:**
+```js
+// App.js
+
+import React from 'react';
+import { withNight } from 'react-night';
+
+const App = props => {
+  return (
+    <h1>Hello Night!</h1>
+  );
+};
+
+export default withNight(App);
 ```
 
 ## License

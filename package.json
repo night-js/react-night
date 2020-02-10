@@ -51,7 +51,6 @@
     "typescript": "^3.7.5"
   },
   "peerDependencies": {
-    "night.js": "^1.2.0",
     "react": ">=16.8.0"
   },
   "husky": {

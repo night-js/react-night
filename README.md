@@ -38,7 +38,8 @@ ReactDOM.render(
 );
 ```
 
-**• Then use `useNight` Hook:**
+## Example
+**• `useNight` hook:**
 ```js
 // App.js
 
@@ -56,7 +57,7 @@ const App = () => {
 export default App;
 ```
 
-**• Or `withNight` HOC:**
+**• `withNight` HOC:**
 ```js
 // App.js
 

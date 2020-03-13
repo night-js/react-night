@@ -33,8 +33,7 @@ declare type Config = {
     callbacks: Callbacks;
 };
 export declare const NightContext: React.Context<any>;
-export declare const NightProvider: ({ children, config }: {
-    children: React.ReactChildren;
-    config?: Partial<Config> | undefined;
-}) => JSX.Element;
+export declare const NightProvider: React.FC<{
+    config?: Partial<Config>;
+}>;
 export {};

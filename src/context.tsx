@@ -39,13 +39,9 @@ type Config = {
 
 export const NightContext = React.createContext<any>(null);
 
-export const NightProvider = ({
-  children,
-  config
-}: {
-  children: React.ReactChildren;
+export const NightProvider: React.FC<{
   config?: Partial<Config>;
-}) => {
+}> = ({ children, config }) => {
   const night = new Night(config);
 
   return (

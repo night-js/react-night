@@ -1,4 +1,4 @@
-# [react-night](https://github.com/jb1905/react-night)
+# [react-night](https://github.com/night-js/react-night)
 
 [![NPM version](http://img.shields.io/npm/v/react-night.svg?style=flat-square)](https://www.npmjs.com/package/react-night)
 [![NPM downloads](http://img.shields.io/npm/dm/react-night.svg?style=flat-square)](https://www.npmjs.com/package/react-night)
@@ -6,7 +6,7 @@
 #### [night.js](https://www.npmjs.com/package/night.js) implementation for React
 
 ## Demo
-**[See plugin in action](https://jb1905.github.io/night.js/)**
+**[See plugin in action](https://night-js.github.io/night.js/)**
 
 ## How to Install
 First, install the library in your project by npm:

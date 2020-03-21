@@ -42,6 +42,6 @@ export const useNight = (): Output => {
     setTimes,
     reset,
     destroy,
-    ...night
+    ...night,
   };
 };

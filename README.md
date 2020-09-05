@@ -76,7 +76,7 @@ export default App;
 import React from 'react';
 import { withNight } from 'react-night';
 
-const App = (props) => {
+const App = ({ /* night.js params */, ...props }) => {
   return (
     <h1>Hello Night!</h1>
   );

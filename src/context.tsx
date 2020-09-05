@@ -37,6 +37,7 @@ type Config = {
   readonly callbacks: Callbacks;
 };
 
+// TODO add types
 export const NightContext = React.createContext<any>(null);
 
 export const NightProvider: React.FC<{

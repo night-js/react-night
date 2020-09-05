@@ -2,19 +2,19 @@ import React from 'react';
 import Night from 'night.js';
 
 type Settings = {
-  auto: boolean;
-  brightness: boolean;
-  brightnessHighClass: string;
-  brightnessLowClass: string;
-  checkBreakpoint: boolean;
-  darkClass?: string;
-  lightClass?: string;
-  mode: 'smart' | 'color-scheme';
-  permissionDelay: number;
-  soundTimeout: number;
-  soundUrl?: string;
-  storage: boolean;
-  storageClear: boolean;
+  readonly auto: boolean;
+  readonly brightness: boolean;
+  readonly brightnessHighClass: string;
+  readonly brightnessLowClass: string;
+  readonly checkBreakpoint: boolean;
+  readonly darkClass?: string;
+  readonly lightClass?: string;
+  readonly mode: 'smart' | 'color-scheme';
+  readonly permissionDelay: number;
+  readonly soundTimeout: number;
+  readonly soundUrl?: string;
+  readonly storage: boolean;
+  readonly storageClear: boolean;
 };
 
 type Callbacks = {
@@ -33,14 +33,15 @@ type Callbacks = {
 };
 
 type Config = {
-  settings: Settings;
-  callbacks: Callbacks;
+  readonly settings: Settings;
+  readonly callbacks: Callbacks;
 };
 
+// TODO add types
 export const NightContext = React.createContext<any>(null);
 
 export const NightProvider: React.FC<{
-  config?: Partial<Config>;
+  readonly config?: Partial<Config>;
 }> = ({ children, config }) => {
   const night = new Night(config);
 

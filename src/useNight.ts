@@ -17,21 +17,14 @@ type Output = {
 export const useNight = (): Output => {
   const night = useContext(NightContext);
 
-  const toggle = () => night.toggle();
-  const light = () => night.light();
-  const dark = () => night.dark();
-  const smartSwitch = () => night.smartSwitch();
-
-  const setCoords = (latitude: number, longitude: number) => {
-    night.setCoords(latitude, longitude);
-  };
-
-  const setTimes = (sunrise: number, sunset: number) => {
-    night.setTimes(sunrise, sunset);
-  };
-
-  const reset = () => night.reset();
-  const destroy = () => night.destroy();
+  const toggle = night.toggle;
+  const light = night.light;
+  const dark = night.dark;
+  const smartSwitch = night.smartSwitch;
+  const setCoords = night.setCoords;
+  const setTimes = night.setTimes;
+  const reset = night.reset;
+  const destroy = night.destroy;
 
   return {
     toggle,

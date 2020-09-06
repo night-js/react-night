@@ -23,11 +23,11 @@
   },
   "keywords": [
     "react",
-    "hooks",
-    "dark",
     "night",
+    "sun",
+    "dark",
     "switch",
-    "sun"
+    "hooks"
   ],
   "bugs": {
     "url": "https://github.com/night-js/react-night/issues"

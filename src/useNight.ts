@@ -3,19 +3,23 @@ import { useContext } from 'react';
 import { NightContext } from './context';
 
 type Output = {
-  readonly toggle: () => void;
-  readonly light: () => void;
-  readonly dark: () => void;
-  readonly smartSwitch: () => void;
-  readonly setCoords: (latiutde: number, longitude: number) => void;
-  readonly setTimes: (sunrise: number, sunset: number) => void;
-  readonly reset: () => void;
-  readonly destroy: () => void;
+  toggle: () => void;
+  light: () => void;
+  dark: () => void;
+  smartSwitch: () => void;
+  setCoords: (latiutde: number, longitude: number) => void;
+  setTimes: (sunrise: number, sunset: number) => void;
+  reset: () => void;
+  destroy: () => void;
   readonly night: object;
 };
 
 export const useNight = (): Output => {
-  const night = useContext(NightContext);
+  const night = useContext(NightContext); // TODO safeContext
+
+  if (night === undefined) {
+    throw new Error('NightContext is not defined');
+  }
 
   const toggle = () => night.toggle();
   const light = () => night.light();

@@ -1,14 +1,16 @@
 # [react-night](https://github.com/night-js/react-night)
 
-[![NPM version](http://img.shields.io/npm/v/react-night?style=flat-square)](https://www.npmjs.com/package/react-night)
-[![NPM downloads](http://img.shields.io/npm/dm/react-night?style=flat-square)](https://www.npmjs.com/package/react-night)
+[![NPM version](https://img.shields.io/npm/v/react-night?style=flat-square)](https://www.npmjs.com/package/react-night)
+[![NPM downloads](https://img.shields.io/npm/dm/react-night?style=flat-square)](https://www.npmjs.com/package/react-night)
 [![NPM license](https://img.shields.io/npm/l/react-night?style=flat-square)](https://www.npmjs.com/package/react-night)
 [![Travis](https://img.shields.io/travis/night-js/react-night/master?style=flat-square)](https://travis-ci.org/night-js/react-night)
 [![Bundle size](https://img.shields.io/bundlephobia/min/react-night?style=flat-square)](https://bundlephobia.com/result?p=react-night)
 
-#### [night.js](https://www.npmjs.com/package/night.js) implementation for React
+## About
 
-## Demo
+**[night.js](https://www.npmjs.com/package/night.js) implementation for React**
+
+### Demo
 
 **[See plugin in action](https://night-js.github.io/night.js/)**
 

@@ -37,12 +37,17 @@ type Config = {
   readonly callbacks: Callbacks;
 };
 
-// TODO add types
-export const NightContext = React.createContext<any>(null);
+interface ContextProps {}
 
-export const NightProvider: React.FC<{
+// TODO add types
+export const NightContext = React.createContext<ContextProps>(null);
+
+interface Props {
+  readonly children: React.ReactNode;
   readonly config?: Partial<Config>;
-}> = ({ children, config }) => {
+}
+
+export const NightProvider = ({ children, config }: Props) => {
   const night = new Night(config);
 
   return (

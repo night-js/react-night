@@ -40,12 +40,14 @@ type Config = {
 interface ContextProps {}
 
 // TODO add types
-export const NightContext = React.createContext<ContextProps>(null);
+export const NightContext = React.createContext<ContextProps | any>({});
 
 interface Props {
   readonly children: React.ReactNode;
   readonly config?: Partial<Config>;
 }
+
+NightContext.displayName = 'NightContext';
 
 export const NightProvider = ({ children, config }: Props) => {
   const night = new Night(config);

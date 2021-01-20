@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useSafeContext } from 'react-safe-context-hooks';
 
 import { NightContext } from './context';
 
@@ -15,11 +15,7 @@ type Output = {
 };
 
 export const useNight = (): Output => {
-  const night = useContext(NightContext); // TODO safeContext
-
-  if (night === undefined) {
-    throw new Error('NightContext is not defined');
-  }
+  const night = useSafeContext(NightContext);
 
   const toggle = () => night.toggle();
   const light = () => night.light();

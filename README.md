@@ -10,6 +10,8 @@
 
 **[night.js](https://www.npmjs.com/package/night.js) implementation for React**
 
+### Alternatives
+
 ### Demo
 
 **[See plugin in action](https://night-js.github.io/night.js/)**

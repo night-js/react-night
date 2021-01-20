@@ -34,7 +34,8 @@
   },
   "homepage": "https://github.com/night-js/react-night#readme",
   "dependencies": {
-    "night.js": "^1.2.0"
+    "night.js": "^1.2.0",
+    "react-safe-context-hooks": "^1.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^11.0.0",
